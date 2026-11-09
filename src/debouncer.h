@@ -38,7 +38,7 @@ public:
 
 private:
   uint32_t debounce_time_ms_;
-  bool last_raw_;
-  bool stable_;
-  uint32_t last_raw_change_ms_;
+  bool last_raw_ = false;
+  bool stable_ = false;
+  uint32_t last_raw_change_ms_ = 0;
 };
